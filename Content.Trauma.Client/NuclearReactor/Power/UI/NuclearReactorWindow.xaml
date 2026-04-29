@@ -1,7 +1,6 @@
-<controls1:FancyWindow xmlns="https://spacestation14.io"
+<controls:FancyWindow xmlns="https://spacestation14.io"
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-            xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
-            xmlns:controls1="clr-namespace:Content.Client.UserInterface.Controls;assembly=Content.Client"
+            xmlns:controls="using:Content.Client.UserInterface.Controls"
             MinSize="690 445" Title="Nuclear Reactor">
     <BoxContainer Orientation="Vertical" Margin="5 5 5 5" SeparationOverride="10">
         <!--Main Content-->
@@ -34,10 +33,10 @@
 									TexturePath="/Textures/_FarHorizons/Structures/Power/Generation/FissionGenerator/reactor_part_inserted/arrow_down.png"/>
 						</Button>
 					</GridContainer>
-					<controls1:StripeBack>
+					<controls:StripeBack>
 						<Button Name="ItemAction" Text="{Loc comp-nuclear-reactor-ui-insert-button}"/>
 						<Label Name="ItemActionLock" Text="{Loc comp-nuclear-reactor-ui-locked}" Visible="false" HorizontalAlignment="Center" VerticalAlignment="Center" />
-					</controls1:StripeBack>
+					</controls:StripeBack>
 			    </BoxContainer>
 
 				<PanelContainer SetHeight="2" VerticalAlignment="Top" SetWidth="150" Margin="2 5" />
@@ -119,7 +118,7 @@
 					<BoxContainer Name="ControlRods" Orientation="Horizontal">
 						<ProgressBar Name="ControlRodsActual" MaxValue="2" SetSize="5 100" Margin="5" Vertical="True" />
 						<ProgressBar Name="ControlRodsSet" MaxValue="2" SetSize="5 100" Margin="5" Vertical="True" />
-						<controls1:StripeBack>
+						<controls:StripeBack>
 							<BoxContainer Name="ControlRodsButtons" Orientation="Vertical">
 								<Button Name="ControlRodsInsertLarge" Text="+ +"/>
 								<Button Name="ControlRodsInsert" Text=" + "/>
@@ -127,7 +126,7 @@
 								<Button Name="ControlRodsRemoveLarge" Text="- -"/>
 							</BoxContainer>
 							<Label Name="ControlRodsLock" Text="{Loc comp-nuclear-reactor-ui-locked}" Visible="false" HorizontalAlignment="Center" VerticalAlignment="Center" />
-						</controls1:StripeBack>
+						</controls:StripeBack>
 					</BoxContainer>
 
 				</BoxContainer>
@@ -148,4 +147,4 @@
             </BoxContainer>
         </BoxContainer>
     </BoxContainer>
-</controls1:FancyWindow>
+</controls:FancyWindow>
